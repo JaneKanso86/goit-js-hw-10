@@ -39,6 +39,22 @@
   transform-origin: center;
   animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
 }
-.nav-link.active::after {
+.nav-link:active {
   background: #747bff;
+}
+.nav-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid rgb(74, 100, 178);
+  color: #090d0e;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #747bff;
+  color: white;
 }
